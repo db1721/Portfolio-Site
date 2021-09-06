@@ -91,12 +91,12 @@ export const UtilityList = styled.ul`
 export const ExternalLinks = styled.a`
 color:#d4c0c0;
 font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #6b3030;
+padding:1.2rem 3rem;
+background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 border-radius: 15px;
 transition: 0.5s;
 &:hover{
-  background: #801414;
+  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)' : 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'};;
 
 }
 `;

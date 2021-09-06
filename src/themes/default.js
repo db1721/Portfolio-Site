@@ -7,8 +7,8 @@ Darker Blues:#001737
 export default {
   // Temp fonts
   fonts: {
-    title: "Space Grotesk, sans-serif",
-    main: "Space Grotesk, sans-serif"
+    title: "Verdana, sans-serif",
+    main: "Verdana, sans-serif"
   },
   // Colors for layout
   colors: {

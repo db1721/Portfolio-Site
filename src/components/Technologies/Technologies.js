@@ -8,8 +8,8 @@ const Technologies = () =>  (
     <SectionDivider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I have worked with a range of technologes in the web development world. 
-      From Back-end to Design
+      {/* I have worked with a range of technologes in the web development world. 
+      From Back-end to Design */}
     </SectionText>
     <List>
       <ListItem>
@@ -18,7 +18,9 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with:<br/>
-            React.js
+            CSS<br/>
+            HTML<br/>
+            Javascipt<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,17 +30,32 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with:<br/>
-            Node.js and Databases
+            C<br/>
+            C++<br/>
+            Java<br/>
+            Python<br/>
+            SQL<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiIonic size="3rem"/>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Development Tools</ListTitle>
           <ListParagraph>
             Experience with:<br/>
-            Figma
+            Atom<br/>
+            AWS<br/>
+            Azure<br/>
+            Cloud9 IDE<br/>
+            CodeBlocks<br/>
+            DynamoDB<br/>
+            Eclispe<br/>
+            Github<br/>
+            GIT<br/>
+            MongoDB<br/>
+            VS Code<br/>
+            NetBeans<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -48,9 +65,9 @@ const Technologies = () =>  (
           <ListTitle>Frameworks</ListTitle>
           <ListParagraph>
             Experience with:<br/>
-            Atom<br/>
-            Eclispe<br/>
-            NetBeans<br/>
+            Bootstrap<br/>
+            Flask<br/>
+            React.js<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>

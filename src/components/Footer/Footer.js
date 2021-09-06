@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
@@ -14,21 +14,21 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
         <LinkTitle>Email</LinkTitle>
-        <LinkItem href="tel: danbeck17@gmail.com">DanBeck17@gmail.com</LinkItem>
+        <LinkItem href="tel: contact@danielbeckjr.com">Contact@DanielBeckJr.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
             <Slogan>Innovating one project at a time</Slogan>
         </CompanyContainer>
-        <SocialIcons href="https://github.com/">
+        <SocialIcons href="https://github.com/db1721">
         <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://linkedin.com/">
+        <SocialIcons href="https://linkedin.com/in/daniel-beck-18700aa7/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://instagram.com/">
-          <AiFillInstagram size="3rem" />
+        <SocialIcons href="https://www.facebook.com/dan.beck.58726/">
+          <AiFillFacebook size="3rem" />
         </SocialIcons>
       </SocialIconsContainer>
     </FooterWrapper>
