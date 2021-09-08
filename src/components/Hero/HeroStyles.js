@@ -23,4 +23,7 @@ export const HeroImg = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
 `

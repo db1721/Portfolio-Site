@@ -18,9 +18,11 @@ const Footer = () => {
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
+        
         <CompanyContainer>
-            <Slogan>Innovating one project at a time</Slogan>
+            <Slogan><i>“Tell me and I forget, teach me and I may remember, involve me and I learn.”</i><small> ―Benjamin Franklin</small></Slogan>
         </CompanyContainer>
+        <SocialContainer>
         <SocialIcons href="https://github.com/db1721">
         <AiFillGithub size="3rem" />
         </SocialIcons>
@@ -30,6 +32,7 @@ const Footer = () => {
         <SocialIcons href="https://www.facebook.com/dan.beck.58726/">
           <AiFillFacebook size="3rem" />
         </SocialIcons>
+        </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
   );
