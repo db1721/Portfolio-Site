@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: 'Directed Graph',
-    description: "A program that creates a direct graph from a text file and sorts classes from a text file using depth-first search",
+    description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search",
     image: '/images/directed-graph.PNG',
     tags: ['Java'],
     source: 'https://github.com/db1721/Directed-Graph/tree/main',
