@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: 'Directed Graph',
-    description: "A program that creates a direct graph from a text file and sorts classes from a text file using depth-first search",
+    description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search",
     image: '/images/directed-graph.PNG',
     tags: ['Java'],
     source: 'https://github.com/db1721/Directed-Graph/tree/main',
@@ -43,11 +43,11 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: '', },
-  { year: 2018, text: '', },
-  { year: 2019, text: '', },
-  { year: 2020, text: '', },
-  { year: 2021, text: '', },
+  { year: 1, text: 'Adaptability', },
+  { year: 2, text: 'Creativity', },
+  { year: 3, text: 'Problem-Solving', },
+  { year: 4, text: 'Lifelong Learner', },
+  { year: 5, text: 'Self-Motivated', },
 ];
 
 export const MyImage = [
@@ -56,6 +56,31 @@ export const MyImage = [
 
 export const certificates = [
   { id: '1', 
-    title: 'Excel',
-    image: '/images/1.jpg'}
+    issuer: 'Excel',
+    title: 'Microsoft Excel 2016',
+    image: '/images/microsoft.png'},
+  { id: '2', 
+    issuer: 'SoloLearn',
+    title: 'Java',
+    image: '/images/sololearn.png'},
+  { id: '3', 
+    issuer: 'SoloLearn',
+    title: 'Python',
+    image: '/images/sololearn.png'},
+  { id: '4', 
+    issuer: 'SoloLearn',
+    title: 'SQL',
+    image: '/images/sololearn.png'},
+  { id: '5', 
+    issuer: 'SoloLearn',
+    title: 'Data Science with Python',
+    image: '/images/sololearn.png'},
+  { id: '6', 
+    issuer: 'SoloLearn',
+    title: 'Ruby',
+    image: '/images/sololearn.png'},
+  { id: '7', 
+    issuer: 'SoloLearn',
+    title: 'HTML',
+    image: '/images/sololearn.png'},
 ];

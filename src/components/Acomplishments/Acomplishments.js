@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import { Box, Boxes, BoxNum, BoxText, BoxIcon } from './AcomplishmentsStyles';
 import { certificates } from '../../constants/constants';
 
 const Acomplishments = () => (
@@ -9,10 +9,11 @@ const Acomplishments = () => (
     <SectionDivider/>
     <SectionTitle>Certifications</SectionTitle>
     <Boxes>
-      {certificates.map(({ id, title, image }) => (
+      {certificates.map(({ id, title, image, issuer }) => (
         <Box key={id}>
-          <BoxNum>{title}</BoxNum>
-          <BoxText></BoxText>
+          <BoxNum>{issuer}<BoxIcon src={image}/></BoxNum>
+          <BoxText>{title}</BoxText>
+          
         </Box>
       ))}
     </Boxes>

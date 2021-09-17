@@ -54,6 +54,7 @@ const Timeline = () => {
       with various frameworks and languages, my passion to learn has also grown. I am currently in my final 
       semester of classes and looking for an opportunity to gain more knowledge in the software engineering 
       field, where I can utilize my determination, organization, interpersonal and problem-solving skills
+      </SectionText>
         <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
           <>
             {TimeLineData.map((item, index) => (
@@ -65,7 +66,7 @@ const Timeline = () => {
                   onClick={(e) => handleClick(e, index)}
                 >
                 <CarouselItemTitle>
-                  {item.year}
+                  {item.text}
                   <CarouselItemImg
                     width="208"
                     height="6"
@@ -97,7 +98,7 @@ const Timeline = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                  <CarouselItemText>{item.text}</CarouselItemText>
+                  {/* <CarouselItemText>{item.text}</CarouselItemText> */}
                 </CarouselItem>
               </CarouselMobileScrollNode>
             ))}
@@ -116,7 +117,7 @@ const Timeline = () => {
             </CarouselButton>
           ))}
         </CarouselButtons>
-      </SectionText>
+      
     </Section>
   );
 };
