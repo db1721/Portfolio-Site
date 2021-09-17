@@ -17,7 +17,6 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with:<br/>
             CSS<br/>
             HTML<br/>
             Javascipt<br/>
@@ -29,11 +28,12 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with:<br/>
             C<br/>
             C++<br/>
             Java<br/>
+            Node<br/>
             Python<br/>
+            Ruby<br/>
             SQL<br/>
           </ListParagraph>
         </ListContainer>
@@ -43,7 +43,6 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Development Tools</ListTitle>
           <ListParagraph>
-            Experience with:<br/>
             Atom<br/>
             AWS<br/>
             Azure<br/>
@@ -64,7 +63,6 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Frameworks</ListTitle>
           <ListParagraph>
-            Experience with:<br/>
             Bootstrap<br/>
             Flask<br/>
             React.js<br/>

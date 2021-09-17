@@ -21,6 +21,12 @@ export const Boxes = styled.div`
     margin: 24px auto;
   }
 `
+export const BoxIcon = styled.img`
+  width:20%;
+  height:20%;
+  object-fit: cover;
+  float right;
+`
 
 export const Box = styled.div`
   background: #212D45;
@@ -48,7 +54,7 @@ export const Box = styled.div`
 `
 export const BoxNum = styled.h5`
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.01em;
@@ -66,7 +72,8 @@ export const BoxNum = styled.h5`
 `
 
 export const BoxText = styled.p`
-  font-style: normal;
+  font-style: italic;
+  padding-top: 25px;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -78,7 +85,7 @@ export const BoxText = styled.p`
     line-height: 20px;
   };
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.sm}{
     font-size: 10px;
     line-height: 14px;
   }
