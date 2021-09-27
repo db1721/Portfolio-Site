@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Traffic Simulator',
     description: 'A Java Swing GUI that displays time, traffic signals and other information for traffic analysts. '
-    + 'User has the ability to start, pause, stop and add cars to the simulation',
+    + 'User has the ability to start, pause, stop and add cars to the simulation.',
       image: '/images/trafficapp.png',
       tags: ['Java'],
     visit: 'https://github.com/db1721/TrafficSimulator/tree/App',
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: 'Directed Graph',
-    description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search",
+    description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search.",
     image: '/images/directed-graph.PNG',
     tags: ['Java'],
     source: 'https://github.com/db1721/Directed-Graph/tree/main',
@@ -21,8 +21,8 @@ export const projects = [
   {
     title: 'Web App Password',
     description: 'A simple web app that allows a user to create an account or sign in. The program compares a created password'
-      + 'to a text file of known common passwords and will not allow the user to use those passwords. '
-      + 'All user log in information is stored to a .csv file',
+      + ' to a text file of known common passwords and will not allow the user to use those passwords. '
+      + 'All user log in information is stored to a .csv file.',
       image: '/images/webapp.png',
       tags: ['Python', 'Flask'],
     source: 'https://github.com/db1721/Web-App-Password/tree/main',
