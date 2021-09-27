@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: 'Expense Tracking App',
+    description: "A simple react Expense Tracker, that uses State Management in React, Context API, "
+    + "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add "
+    + "income and expenses. The app is hosted on Netlify.",
+      image: '/images/expense-app.png',
+      tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
+    visit: 'https://beck-expense-tracker-app.netlify.app/',
+    source: 'https://github.com/db1721/Chat-App',
+    id: 5,
+  },
+  {
     title: 'Traffic Simulator',
     description: 'A Java Swing GUI that displays time, traffic signals and other information for traffic analysts. '
     + 'User has the ability to start, pause, stop and add cars to the simulation.',
@@ -7,7 +18,7 @@ export const projects = [
       tags: ['Java'],
     visit: 'https://github.com/db1721/TrafficSimulator/tree/App',
     source: 'https://github.com/db1721/TrafficSimulator/tree/main',
-    id: 1,
+    id: 4,
   },
   {
     title: 'Directed Graph',
@@ -38,7 +49,7 @@ export const projects = [
     tags: ['Java'],
     source: 'https://github.com/db1721/RealEstateManagement/tree/main',
     visit: 'https://github.com/db1721/RealEstateManagement/tree/App',
-    id: 0,
+    id: 1,
   },
 ];
 
