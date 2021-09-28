@@ -4,7 +4,7 @@ export const projects = [
     description: "A simple react Expense Tracker, that uses State Management in React, Context API, "
     + "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add "
     + "income and expenses. The app is hosted on Netlify.",
-      image: '/images/expense-app.png',
+      image: '/images/expenseapp.png',
       tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
     visit: 'https://beck-expense-tracker-app.netlify.app/',
     source: 'https://github.com/db1721/Chat-App',
