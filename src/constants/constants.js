@@ -97,6 +97,10 @@ export const certificates = [
 ];
 
 export const avCertificates = [
+  { id: '4', 
+    issuer: 'Crestron',
+    title: 'DMC-D-4K',
+    image: '/images/icons/crestron.png'},
   { id: '3', 
     issuer: 'Crestron',
     title: 'CTI-P101',
