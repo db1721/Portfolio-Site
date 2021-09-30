@@ -103,12 +103,10 @@ export const avCertificates = [
     image: '/images/icons/sheffield.png'},
   { id: '2', 
     issuer: 'Crestron',
-    title: 'Techworks Completion Certificate',
-    image: '/images/icons/sheffield.png'},
+    title: 'DMC-D-4K',
+    image: '/images/icons/crestron.png'},
   { id: '1', 
     issuer: 'Sheffield',
     title: 'Techworks Completion Certificate',
-    image: '/images/icons/sheffield.png'},
+    image: '/images/icons/crestron.png'},
 ];
-
-Crestron - 
