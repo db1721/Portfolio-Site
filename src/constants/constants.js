@@ -97,6 +97,10 @@ export const certificates = [
 ];
 
 export const avCertificates = [
+  { id: '5', 
+    issuer: 'Biamp',
+    title: 'TesiraForte',
+    image: '/images/icons/biamp.png'},
   { id: '4', 
     issuer: 'Crestron',
     title: 'CTI-P101',
