@@ -61,7 +61,7 @@ export const TimeLineData = [
   { year: 5, text: 'Self-Motivated', },
 ];
 
-export const MyImage = [
+export const myImage = [
   { image: '/images/dog.png', },
 ];
 
@@ -97,6 +97,10 @@ export const certificates = [
 ];
 
 export const avCertificates = [
+  { id: '6', 
+    issuer: 'Biamp',
+    title: 'Audia',
+    image: '/images/icons/biamp.png'},
   { id: '5', 
     issuer: 'Biamp',
     title: 'TesiraForte',
