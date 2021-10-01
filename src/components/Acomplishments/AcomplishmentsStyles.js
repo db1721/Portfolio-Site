@@ -21,6 +21,7 @@ export const Boxes = styled.div`
     margin: 24px auto;
   }
 `
+
 export const BoxIcon = styled.img`
   width:20%;
   height:20%;
@@ -33,6 +34,10 @@ export const Box = styled.div`
   border-radius: 12px;
   height: 144px;
   padding: 24px;
+  &:hover{ 
+  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)' : 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'};;
+}
+  
   @media ${props => props.theme.breakpoints.lg} {
     height: 210px;
 
