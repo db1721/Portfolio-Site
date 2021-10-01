@@ -112,7 +112,7 @@ export const avCertificates = [
   { id: '3', 
     issuer: 'Crestron',
     title: 'DMC-D-4K',
-    image: '/images/icons/sheffield.png'},
+    image: '/images/icons/crestron.png'},
   { id: '2', 
     issuer: 'Crestron',
     title: 'RL-C',
@@ -120,5 +120,5 @@ export const avCertificates = [
   { id: '1', 
     issuer: 'Sheffield',
     title: 'Techworks Completion Certificate',
-    image: '/images/icons/crestron.png'},
+    image: '/images/icons/sheffield.png'},
 ];
