@@ -1,24 +1,23 @@
 export const projects = [
   {
     title: 'TinDog Website',
-    description: "A simple react Expense Tracker, that uses State Management in React, Context API, "
-    + "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add "
-    + "income and expenses. The app is hosted on Netlify.",
+    description: "A one page website advertising an app that is like Tinder for dogs. The webiste is " 
+    + "hosted with Netlify",
       image: '/images/projects/TinDog.png',
       tags: ['BootStrap', 'CSS', 'HTML', 'Netlify'],
-    visit: 'https://beck-expense-tracker-app.netlify.app/',
-    source: 'https://github.com/db1721/Chat-App',
-    id: 5,
+    visit: 'https://beck-tindog.netlify.app/',
+    source: 'https://github.com/db1721/AngelaYu-WebDevelopmentBootcamp/tree/TinDog',
+    id: 6,
   },
   {
     title: 'Expense Tracking App',
     description: "A simple react Expense Tracker, that uses State Management in React, Context API, "
     + "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add "
-    + "income and expenses. The app is hosted on Netlify.",
-      image: '/images/projects/expense.PNG',
+    + "income and expenses. The app is hosted with Netlify.",
+      image: '/images/projects/expense.png',
       tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
     visit: 'https://beck-expense-tracker-app.netlify.app/',
-    source: 'https://github.com/db1721/Chat-App',
+    source: 'https://github.com/db1721/Expense-Tracker',
     id: 5,
   },
   {
@@ -34,7 +33,7 @@ export const projects = [
   {
     title: 'Directed Graph',
     description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search.",
-    image: '/images/projects/directed-graph.PNG',
+    image: '/images/projects/directed-graph.png',
     tags: ['Java'],
     source: 'https://github.com/db1721/Directed-Graph/tree/main',
     visit: 'https://github.com/db1721/Directed-Graph/tree/App',
