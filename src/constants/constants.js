@@ -98,12 +98,12 @@ export const certificates = [
 
 export const avCertificates = [
   //!Template
-  
+  /*
   { id: '68', 
     issuer: 'Issuer',
     title: 'Title',
     image: '/images/icons/file.png'},
-  
+  */
   { id: '17', 
     issuer: 'AMX',
     title: 'CC101 Core Curriculum - Audio Essentials',
