@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'TinDog Website',
     description: "A one page website advertising an app that is like Tinder for dogs. The webiste is " 
-    + "hosted with Netlify",
+    + "hosted with Netlify.",
       image: '/images/projects/TinDog.png',
       tags: ['BootStrap', 'CSS', 'HTML', 'Netlify'],
     visit: 'https://beck-tindog.netlify.app/',
