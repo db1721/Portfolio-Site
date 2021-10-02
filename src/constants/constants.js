@@ -1,10 +1,21 @@
 export const projects = [
   {
+    title: 'TinDog Website',
+    description: "A simple react Expense Tracker, that uses State Management in React, Context API, "
+    + "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add "
+    + "income and expenses. The app is hosted on Netlify.",
+      image: '/images/projects/TinDog.png',
+      tags: ['BootStrap', 'CSS', 'HTML', 'Netlify'],
+    visit: 'https://beck-expense-tracker-app.netlify.app/',
+    source: 'https://github.com/db1721/Chat-App',
+    id: 5,
+  },
+  {
     title: 'Expense Tracking App',
     description: "A simple react Expense Tracker, that uses State Management in React, Context API, "
     + "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add "
     + "income and expenses. The app is hosted on Netlify.",
-      image: '/images/projects/expense.png',
+      image: '/images/projects/expense.PNG',
       tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
     visit: 'https://beck-expense-tracker-app.netlify.app/',
     source: 'https://github.com/db1721/Chat-App',
@@ -23,7 +34,7 @@ export const projects = [
   {
     title: 'Directed Graph',
     description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search.",
-    image: '/images/projects/directed-graph.png',
+    image: '/images/projects/directed-graph.PNG',
     tags: ['Java'],
     source: 'https://github.com/db1721/Directed-Graph/tree/main',
     visit: 'https://github.com/db1721/Directed-Graph/tree/App',
