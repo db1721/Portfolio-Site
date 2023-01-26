@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Section, SectionDivider, SectionTitle, SectionSubTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText, BoxIcon, BoxesHover } from './AcomplishmentsStyles';
-import { certificates, avCertificates } from '../../constants/constants';
+import { certificates } from '../../constants/constants';
 
 
 const Acomplishments = () => (
@@ -22,16 +22,6 @@ const Acomplishments = () => (
         </Box>
       ))}
       
-    </Boxes>
-    <SectionSubTitle>AV Certifications</SectionSubTitle>
-    <Boxes>
-      {avCertificates.map(({ id, title, image, issuer }) => (
-        <Box key={id}>
-          <BoxNum>{issuer}<BoxIcon src={image}/></BoxNum>
-          <BoxText>{title}</BoxText>
-          
-        </Box>
-      ))}
     </Boxes>
   </Section>
 );
