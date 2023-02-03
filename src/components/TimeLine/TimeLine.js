@@ -47,13 +47,13 @@ const Timeline = () => {
       <SectionDivider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      I have 10 years of experience within the Audio/Video industry where I have gained knowledge in 
-      commissioning and programming. After working with A/V software development programs such as Crestron 
-      Simpl Windows and Biamp Tesira, I grew a passion to learn more about software development, leading 
-      me to pursue a bachelor’s degree in Software Development & Security. As I have gained more knowledge 
-      with various frameworks and languages, my passion to learn has also grown. I am currently in my final 
-      semester of classes and looking for an opportunity to gain more knowledge in the software engineering 
-      field, where I can utilize my determination, organization, interpersonal and problem-solving skills
+      I was introduced to programming Audio/Video systems almost 8 years ago, creating GUIs using VT-Pro, 
+      programming control systems with Simpl Windows and Simpl+ (C# language), and debugging or updating 
+      code in the field. After working with A/V software development programs for 6 years, I grew a 
+      passion to learn more about software development, leading me to pursue a bachelor’s degree in 
+      Software Development & Security. After completing my degree, I have spent almost two years focusing 
+      on backend development and AWS. I currently am working with Python development while studying for achieve 
+      the AWS Developer Cert.
       </SectionText>
         <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
           <>

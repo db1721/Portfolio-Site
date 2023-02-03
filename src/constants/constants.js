@@ -1,426 +1,608 @@
-export const projects = [
-  {
-    title: 'Album Finder',
-    description: "A framework that uses the MusicBrainz and YouTube API to find and download albums. Uses EasyID3 to add metadata",
-      image: '/images/projects/album.jpg',
-      tags: ['Python', 'API'],
-    source: 'https://github.com/db1721/Album-Finder',
-    id: 6,
-  },
-  {
-    title: 'Webull Trading Bot',
-    description: "A framework that uses the Webull API to buy and sell stocks, creating a personalized weighted portfolio. "
-    + "Includes an algorithm to calculate intrinsic value of favorite stocks",
-      image: '/images/projects/trading.jpg',
-      tags: ['Python', 'API'],
-    source: 'https://github.com/db1721/Webull_Trading_Bot',
-    id: 6,
-  },
-  {
-    title: 'TinDog Website',
-    description: "A one page website advertising an app that is like Tinder for dogs. The webiste is " 
-    + "hosted with Netlify.",
-      image: '/images/projects/TinDog.png',
-      tags: ['BootStrap', 'CSS', 'HTML', 'Netlify'],
-    visit: 'https://beck-tindog.netlify.app/',
-    source: 'https://github.com/db1721/AngelaYu-WebDevelopmentBootcamp/tree/TinDog',
-    id: 6,
-  },
-  {
-    title: 'Expense Tracking App',
-    description: "A simple react Expense Tracker, that uses State Management in React, Context API, "
-    + "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add "
-    + "income and expenses. The app is hosted with Netlify.",
-      image: '/images/projects/expense.png',
-      tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
-    visit: 'https://beck-expense-tracker-app.netlify.app/',
-    source: 'https://github.com/db1721/Expense-Tracker',
-    id: 5,
-  },
-  {
-    title: 'Traffic Simulator',
-    description: 'A Java Swing GUI that displays time, traffic signals and other information for traffic analysts. '
-    + 'User has the ability to start, pause, stop and add cars to the simulation.',
-      image: '/images/projects/trafficapp.png',
-      tags: ['Java'],
-    visit: 'https://github.com/db1721/TrafficSimulator/tree/App',
-    source: 'https://github.com/db1721/TrafficSimulator/tree/main',
-    id: 4,
-  },
-  {
-    title: 'Directed Graph',
-    description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search.",
-    image: '/images/projects/directed-graph.png',
-    tags: ['Java'],
-    source: 'https://github.com/db1721/Directed-Graph/tree/main',
-    visit: 'https://github.com/db1721/Directed-Graph/tree/App',
-    id: 3,
-  },
-  {
-    title: 'Web App Password',
-    description: 'A simple web app that allows a user to create an account or sign in. The program compares a created password'
-      + ' to a text file of known common passwords and will not allow the user to use those passwords. '
-      + 'All user log in information is stored to a .csv file.',
-      image: '/images/projects/webapp.png',
-      tags: ['Python', 'Flask'],
-    source: 'https://github.com/db1721/Web-App-Password/tree/main',
-    visit: 'https://github.com/db1721/Web-App-Password/tree/App',
-    id: 2,
-  },
-  {
-    title: 'Real Estate Management',
-    description:'A Java program that initializes a GUI that the user can store/recall/edit details of a property. '
-      + 'The details of the property being stored are, the property address, number of bedrooms, square footage, price, '
-      + 'and the status of the property, and are stored in a TreeMap.',
-    image: '/images/projects/propertyManagement.png',
-    tags: ['Java'],
-    source: 'https://github.com/db1721/RealEstateManagement/tree/main',
-    visit: 'https://github.com/db1721/RealEstateManagement/tree/App',
-    id: 1,
-  },
+export const projects = [{
+        title: 'Album Finder',
+        description: "A framework that uses the MusicBrainz and YouTube API to find and download albums. Uses EasyID3 to add metadata",
+        image: '/images/projects/album.jpg',
+        tags: ['Python', 'API'],
+        source: 'https://github.com/db1721/Album-Finder',
+        id: 6,
+    },
+    {
+        title: 'Webull Trading Bot',
+        description: "A framework that uses the Webull API to buy and sell stocks, creating a personalized weighted portfolio. " +
+            "Includes an algorithm to calculate intrinsic value of favorite stocks",
+        image: '/images/projects/trading.jpg',
+        tags: ['Python', 'API'],
+        source: 'https://github.com/db1721/Webull_Trading_Bot',
+        id: 6,
+    },
+    {
+        title: 'TinDog Website',
+        description: "A one page website advertising an app that is like Tinder for dogs. The webiste is " +
+            "hosted with Netlify.",
+        image: '/images/projects/TinDog.png',
+        tags: ['BootStrap', 'CSS', 'HTML', 'Netlify'],
+        visit: 'https://beck-tindog.netlify.app/',
+        source: 'https://github.com/db1721/AngelaYu-WebDevelopmentBootcamp/tree/TinDog',
+        id: 6,
+    },
+    {
+        title: 'Expense Tracking App',
+        description: "A simple react Expense Tracker, that uses State Management in React, Context API, " +
+            "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add " +
+            "income and expenses. The app is hosted with Netlify.",
+        image: '/images/projects/expense.png',
+        tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
+        visit: 'https://beck-expense-tracker-app.netlify.app/',
+        source: 'https://github.com/db1721/Expense-Tracker',
+        id: 5,
+    },
+    {
+        title: 'Traffic Simulator',
+        description: 'A Java Swing GUI that displays time, traffic signals and other information for traffic analysts. ' +
+            'User has the ability to start, pause, stop and add cars to the simulation.',
+        image: '/images/projects/trafficapp.png',
+        tags: ['Java'],
+        visit: 'https://github.com/db1721/TrafficSimulator/tree/App',
+        source: 'https://github.com/db1721/TrafficSimulator/tree/main',
+        id: 4,
+    },
+    {
+        title: 'Directed Graph',
+        description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search.",
+        image: '/images/projects/directed-graph.png',
+        tags: ['Java'],
+        source: 'https://github.com/db1721/Directed-Graph/tree/main',
+        visit: 'https://github.com/db1721/Directed-Graph/tree/App',
+        id: 3,
+    },
+    {
+        title: 'Web App Password',
+        description: 'A simple web app that allows a user to create an account or sign in. The program compares a created password' +
+            ' to a text file of known common passwords and will not allow the user to use those passwords. ' +
+            'All user log in information is stored to a .csv file.',
+        image: '/images/projects/webapp.png',
+        tags: ['Python', 'Flask'],
+        source: 'https://github.com/db1721/Web-App-Password/tree/main',
+        visit: 'https://github.com/db1721/Web-App-Password/tree/App',
+        id: 2,
+    },
+    {
+        title: 'Real Estate Management',
+        description: 'A Java program that initializes a GUI that the user can store/recall/edit details of a property. ' +
+            'The details of the property being stored are, the property address, number of bedrooms, square footage, price, ' +
+            'and the status of the property, and are stored in a TreeMap.',
+        image: '/images/projects/propertyManagement.png',
+        tags: ['Java'],
+        source: 'https://github.com/db1721/RealEstateManagement/tree/main',
+        visit: 'https://github.com/db1721/RealEstateManagement/tree/App',
+        id: 1,
+    },
 ];
 
 export const TimeLineData = [
-  { year: 1, text: 'Adaptability', },
-  { year: 2, text: 'Creativity', },
-  { year: 3, text: 'Problem-Solving', },
-  { year: 4, text: 'Lifelong Learner', },
-  { year: 5, text: 'Self-Motivated', },
+    { year: 1, text: 'Adaptability', },
+    { year: 2, text: 'Creativity', },
+    { year: 3, text: 'Problem-Solving', },
+    { year: 4, text: 'Lifelong Learner', },
+    { year: 5, text: 'Self-Motivated', },
 ];
 
 export const myImage = [
-  { image: '/images/dog.png', },
+    { image: '/images/dog.png', },
 ];
 
-export const certificates = [
-  { id: '12', 
-    issuer: 'AWS',
-    title: 'Certified Cloud Practitioner',
-    image: '/images/icons/aws-certified-cloud-practitioner.png'},
-  { id: '11', 
-    issuer: 'AWS',
-    title: 'Cloud Quest - Cloud Practitioner',
-    image: '/images/icons/aws-cloud-quest-cloud-practitioner-small.png'},
-  { id: '10', 
-    issuer: 'AWS',
-    title: 'AWS Technical Essentials',
-    image: '/images/icons/aws_logo_cloud.png'},
-  { id: '09', 
-    issuer: 'EDx',
-    title: 'Python for Everybody',
-    image: '/images/icons/python_for_everybody_logo.png'},
-  { id: '08', 
-    issuer: 'SAFe',
-    title: 'SAFe 5 Agilist',
-    image: '/images/icons/safe_agilist.png'},
-  { id: '07', 
-    issuer: 'SoloLearn',
-    title: 'HTML',
-    image: '/images/icons/sololearn.png'},
-  { id: '06', 
-    issuer: 'SoloLearn',
-    title: 'Java',
-    image: '/images/icons/sololearn.png'},
-  { id: '05', 
-    issuer: 'SoloLearn',
-    title: 'Python',
-    image: '/images/icons/sololearn.png'},
-  { id: '04', 
-    issuer: 'SoloLearn',
-    title: 'Data Science with Python',
-    image: '/images/icons/sololearn.png'},
-  { id: '03', 
-    issuer: 'SoloLearn',
-    title: 'SQL',
-    image: '/images/icons/sololearn.png'},
-  { id: '02', 
-    issuer: 'SoloLearn',
-    title: 'Ruby',
-    image: '/images/icons/sololearn.png'},
-  { id: '01', 
-    issuer: 'Microsoft',
-    title: 'Microsoft Excel 2016',
-    image: '/images/icons/microsoft.png'},
+export const certificates = [{
+        id: '12',
+        issuer: 'AWS',
+        title: 'Certified Cloud Practitioner',
+        image: '/images/icons/aws-certified-cloud-practitioner.png'
+    },
+    {
+        id: '11',
+        issuer: 'AWS',
+        title: 'Cloud Quest - Cloud Practitioner',
+        image: '/images/icons/aws-cloud-quest-cloud-practitioner-small.png'
+    },
+    {
+        id: '10',
+        issuer: 'AWS',
+        title: 'AWS Technical Essentials',
+        image: '/images/icons/aws_logo_cloud.png'
+    },
+    {
+        id: '09',
+        issuer: 'EDx',
+        title: 'Python for Everybody',
+        image: '/images/icons/python_for_everybody_logo.png'
+    },
+    {
+        id: '08',
+        issuer: 'SAFe',
+        title: 'SAFe 5 Agilist',
+        image: '/images/icons/safe_agilist.png'
+    },
+    {
+        id: '07',
+        issuer: 'SoloLearn',
+        title: 'HTML',
+        image: '/images/icons/sololearn.png'
+    },
+    {
+        id: '06',
+        issuer: 'SoloLearn',
+        title: 'Java',
+        image: '/images/icons/sololearn.png'
+    },
+    {
+        id: '05',
+        issuer: 'SoloLearn',
+        title: 'Python',
+        image: '/images/icons/sololearn.png'
+    },
+    {
+        id: '04',
+        issuer: 'SoloLearn',
+        title: 'Data Science with Python',
+        image: '/images/icons/sololearn.png'
+    },
+    {
+        id: '03',
+        issuer: 'SoloLearn',
+        title: 'SQL',
+        image: '/images/icons/sololearn.png'
+    },
+    {
+        id: '02',
+        issuer: 'SoloLearn',
+        title: 'Ruby',
+        image: '/images/icons/sololearn.png'
+    },
+    {
+        id: '13',
+        issuer: 'Crestron',
+        title: 'CTI-P101',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '14',
+        issuer: 'Crestron',
+        title: 'CTI-201',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '15',
+        issuer: 'Crestron',
+        title: 'CTI-Fusion-P',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '16',
+        issuer: 'Crestron',
+        title: 'CTI-SG',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '01',
+        issuer: 'Microsoft',
+        title: 'Microsoft Excel 2016',
+        image: '/images/icons/microsoft.png'
+    },
 ];
 
 export const avCertificates = [
-  //!Template
-  /*
-  { id: '68', 
-    issuer: 'Issuer',
-    title: 'Title',
-    image: '/images/icons/file.png'},
-  */
-  { id: '17', 
-    issuer: 'AMX',
-    title: 'CC101 Core Curriculum - Audio Essentials',
-    image: '/images/icons/amx.png'},
-  { id: '18', 
-    issuer: 'AMX',
-    title: 'CC102 Core Curriculum - Cabling Essentials',
-    image: '/images/icons/amx.png'},
-  { id: '19', 
-    issuer: 'AMX',
-    title: 'CC103 Core Curriculum - Control Essentials',
-    image: '/images/icons/amx.png'},
-  { id: '20', 
-    issuer: 'AMX',
-    title: 'CC104 Core Curriculum - Networking Essentials',
-    image: '/images/icons/amx.png'},
-  { id: '21', 
-    issuer: 'AMX',
-    title: 'CC105 Core Curriculum - PC Essentials',
-    image: '/images/icons/amx.png'},
-  { id: '22', 
-    issuer: 'AMX',
-    title: 'CC106 Core Curriculum - Video Essentials',
-    image: '/images/icons/amx.png'},
-  { id: '23', 
-    issuer: 'AMX',
-    title: 'CT160 - Commissioning Associate',
-    image: '/images/icons/amx.png'},
-  { id: '25', 
-    issuer: 'Audinate',
-    title: 'Daunte Level 1',
-    image: '/images/icons/audinate.png'},
-  { id: '26', 
-    issuer: 'Audinate',
-    title: 'Daunte Level 2',
-    image: '/images/icons/audinate.png'},
-  { id: '27', 
-    issuer: 'Audinate',
-    title: 'Daunte Level 3',
-    image: '/images/icons/audinate.png'},
-  { id: '58', 
-    issuer: 'Avixa',
-    title: 'AV Design Level 1 - Environment Online',
-    image: '/images/icons/avixa2.png'},
-  { id: '59', 
-    issuer: 'Avixa',
-    title: 'AV Design Level 2 - Infrastructure',
-    image: '/images/icons/avixa2.png'},
-  { id: '60', 
-    issuer: 'Avixa',
-    title: 'AV Design Level 3 - Applied Design Online',
-    image: '/images/icons/avixa2.png'},
-  { id: '56', 
-    issuer: 'Avixa',
-    title: 'AV Math for Design',
-    image: '/images/icons/avixa2.png'},
-  { id: '11', 
-    issuer: 'Avixa',
-    title: 'AVT',
-    image: '/images/icons/avixa2.png'},
-  { id: '12', 
-    issuer: 'Avixa',
-    title: 'CTS-I',
-    image: '/images/icons/avixa2.png'},
-  { id: '14', 
-    issuer: 'Avixa',
-    title: 'Elements of System Fabrication',
-    image: '/images/icons/avixa2.png'},
-  { id: '15', 
-    issuer: 'Avixa',
-    title: 'Elements of Setup and Verification',
-    image: '/images/icons/avixa2.png'},
-  { id: '63', 
-    issuer: 'Avixa',
-    title: 'Networking Technology',
-    image: '/images/icons/avixa2.png'},
-  { id: '64', 
-    issuer: 'Avixa',
-    title: 'Project Management for AV',
-    image: '/images/icons/avixa2.png'},
-  { id: '6', 
-    issuer: 'Biamp',
-    title: 'Audia',
-    image: '/images/icons/biamp.png'},
-  { id: '5', 
-    issuer: 'Biamp',
-    title: 'TesiraForte',
-    image: '/images/icons/biamp.png'},
-  { id: '9', 
-    issuer: 'Biamp',
-    title: 'VoIP',
-    image: '/images/icons/biamp.png'},
-  { id: '7', 
-    issuer: 'Clearone',
-    title: 'AudioVideo Distribution and Control',
-    image: '/images/icons/clearone.png'},
-  { id: '13', 
-    issuer: 'Clearone',
-    title: 'Collaborate Video Conferencing',
-    image: '/images/icons/clearone.png'},
-  { id: '9', 
-    issuer: 'Clearone',
-    title: 'Digital Signage',
-    image: '/images/icons/clearone.png'},
-  { id: '10', 
-    issuer: 'Clearone',
-    title: 'Media Carts',
-    image: '/images/icons/clearone.png'},
-  { id: '24', 
-    issuer: 'Clearone',
-    title: 'Personal Conferencing',
-    image: '/images/icons/clearone.png'},
-  { id: '29', 
-    issuer: 'Clearone',
-    title: 'TableTop Conferencing',
-    image: '/images/icons/clearone.png'},
-  { id: '66', 
-    issuer: 'Crestron',
-    title: 'Certified Audio Technician',
-    image: '/images/icons/crestron.png'},
-  { id: '4', 
-    issuer: 'Crestron',
-    title: 'CTI-P101',
-    image: '/images/icons/crestron.png'},
-  { id: '57', 
-    issuer: 'Crestron',
-    title: 'CTI-201',
-    image: '/images/icons/crestron.png'},
-  { id: '61', 
-    issuer: 'Crestron',
-    title: 'CTI-Fusion-P',
-    image: '/images/icons/crestron.png'},
-  { id: '62', 
-    issuer: 'Crestron',
-    title: 'CTI-SG',
-    image: '/images/icons/crestron.png'},
-  { id: '3', 
-    issuer: 'Crestron',
-    title: 'DMC-D-4K',
-    image: '/images/icons/crestron.png'},
-  { id: '2', 
-    issuer: 'Crestron',
-    title: 'RL-C',
-    image: '/images/icons/crestron.png'},
-  { id: '30', 
-    issuer: 'HDBaseT',
-    title: 'Installer',
-    image: '/images/icons/hdbaset.jpg'},
-  { id: '16', 
-    issuer: 'Extron',
-    title: 'EAVA',
-    image: '/images/icons/extron.png'},
-  { id: '65', 
-    issuer: 'Extron',
-    title: 'Extron Control Professional',
-    image: '/images/icons/extron.png'},
-  { id: '8', 
-    issuer: 'Mersive',
-    title: 'Solstice',
-    image: '/images/icons/mersive.png'},
-  { id: '32', 
-    issuer: 'Peerless',
-    title: 'Bronze Level Certification',
-    image: '/images/icons/peerless.png'},
-  { id: '1', 
-    issuer: 'Sheffield',
-    title: 'Techworks Completion Certificate',
-    image: '/images/icons/sheffield.png'},
-  { id: '67', 
-    issuer: 'Shure',
-    title: 'Voice Lift System Design',
-    image: '/images/icons/shure.png'},
-  { id: '33', 
-    issuer: 'SMART',
-    title: '33918 Meeting Pro Technical Training',
-    image: '/images/icons/smart.png'},
-  { id: '54', 
-    issuer: 'SMART',
-    title: '33925 Room System Technical Training',
-    image: '/images/icons/smart.png'},
-  { id: '34', 
-    issuer: 'SMART',
-    title: '33995 Tech Professional for Business',
-    image: '/images/icons/smart.png'},
-  { id: '51', 
-    issuer: 'SMART',
-    title: '40012 Installer Training',
-    image: '/images/icons/smart.png'},
-  { id: '52', 
-    issuer: 'SMART',
-    title: '40013 Introducing SMART Products',
-    image: '/images/icons/smart.png'},
-  { id: '53', 
-    issuer: 'SMART',
-    title: '40014 Preparing to Install',
-    image: '/images/icons/smart.png'},
-  { id: '42', 
-    issuer: 'SMART',
-    title: '40018 Professional for Education',
-    image: '/images/icons/smart.png'},
-  { id: '48', 
-    issuer: 'SMART',
-    title: '40019 Amp Technical Training',
-    image: '/images/icons/smart.png'},
-  { id: '39', 
-    issuer: 'SMART',
-    title: '40020 SMART Notebook 18',
-    image: '/images/icons/smart.png'},
-  { id: '41', 
-    issuer: 'SMART',
-    title: '40021 SMART Board M600 series',
-    image: '/images/icons/smart.png'},
-  { id: '40', 
-    issuer: 'SMART',
-    title: '40022 SMART Board 800 series',
-    image: '/images/icons/smart.png'},
-  { id: '35', 
-    issuer: 'SMART',
-    title: '40023 Board 2000 and 2000 Pro series',
-    image: '/images/icons/smart.png'},
-  { id: '36', 
-    issuer: 'SMART',
-    title: '40025 Board 6000 and 6000 Pro series',
-    image: '/images/icons/smart.png'},
-  { id: '37', 
-    issuer: 'SMART',
-    title: '40026 Board 7000 and 7000 Pro series',
-    image: '/images/icons/smart.png'},
-  { id: '47', 
-    issuer: 'SMART',
-    title: '40027 Installing Interactive Displays',
-    image: '/images/icons/smart.png'},
-  { id: '49', 
-    issuer: 'SMART',
-    title: '40028 Interactive Whiteboard Systems',
-    image: '/images/icons/smart.png'},
-  { id: '50', 
-    issuer: 'SMART',
-    title: '40029 Kapp Boards',
-    image: '/images/icons/smart.png'},
-  { id: '53', 
-    issuer: 'SMART',
-    title: '40030 Installing Accessories',
-    image: '/images/icons/smart.png'},
-  { id: '43', 
-    issuer: 'SMART',
-    title: '43001 Board MX series ',
-    image: '/images/icons/smart.png'},
-  { id: '44', 
-    issuer: 'SMART',
-    title: '43002 SMART Board MX100 series',
-    image: '/images/icons/smart.png'},
-  { id: '38', 
-    issuer: 'SMART',
-    title: '43003 Podium 624 and 624 Pro',
-    image: '/images/icons/smart.png'},
-  { id: '45', 
-    issuer: 'SMART',
-    title: '43004 Learning Suite Online',
-    image: '/images/icons/smart.png'},
-  { id: '46', 
-    issuer: 'SMART',
-    title: '43005 iQ Experience',
-    image: '/images/icons/smart.png'},
-  { id: '55', 
-    issuer: 'SMART',
-    title: 'Room System with Skype for Business',
-    image: '/images/icons/smart.png'},
-  { id: '31', 
-    issuer: 'Symetrix',
-    title: 'SymNet Composer Certification',
-    image: '/images/icons/symetrix.png'},
+    //!Template
+    /*
+    { id: '68', 
+      issuer: 'Issuer',
+      title: 'Title',
+      image: '/images/icons/file.png'},
+    */
+    {
+        id: '17',
+        issuer: 'AMX',
+        title: 'CC101 Core Curriculum - Audio Essentials',
+        image: '/images/icons/amx.png'
+    },
+    {
+        id: '18',
+        issuer: 'AMX',
+        title: 'CC102 Core Curriculum - Cabling Essentials',
+        image: '/images/icons/amx.png'
+    },
+    {
+        id: '19',
+        issuer: 'AMX',
+        title: 'CC103 Core Curriculum - Control Essentials',
+        image: '/images/icons/amx.png'
+    },
+    {
+        id: '20',
+        issuer: 'AMX',
+        title: 'CC104 Core Curriculum - Networking Essentials',
+        image: '/images/icons/amx.png'
+    },
+    {
+        id: '21',
+        issuer: 'AMX',
+        title: 'CC105 Core Curriculum - PC Essentials',
+        image: '/images/icons/amx.png'
+    },
+    {
+        id: '22',
+        issuer: 'AMX',
+        title: 'CC106 Core Curriculum - Video Essentials',
+        image: '/images/icons/amx.png'
+    },
+    {
+        id: '23',
+        issuer: 'AMX',
+        title: 'CT160 - Commissioning Associate',
+        image: '/images/icons/amx.png'
+    },
+    {
+        id: '25',
+        issuer: 'Audinate',
+        title: 'Daunte Level 1',
+        image: '/images/icons/audinate.png'
+    },
+    {
+        id: '26',
+        issuer: 'Audinate',
+        title: 'Daunte Level 2',
+        image: '/images/icons/audinate.png'
+    },
+    {
+        id: '27',
+        issuer: 'Audinate',
+        title: 'Daunte Level 3',
+        image: '/images/icons/audinate.png'
+    },
+    {
+        id: '58',
+        issuer: 'Avixa',
+        title: 'AV Design Level 1 - Environment Online',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '59',
+        issuer: 'Avixa',
+        title: 'AV Design Level 2 - Infrastructure',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '60',
+        issuer: 'Avixa',
+        title: 'AV Design Level 3 - Applied Design Online',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '56',
+        issuer: 'Avixa',
+        title: 'AV Math for Design',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '11',
+        issuer: 'Avixa',
+        title: 'AVT',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '12',
+        issuer: 'Avixa',
+        title: 'CTS-I',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '14',
+        issuer: 'Avixa',
+        title: 'Elements of System Fabrication',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '15',
+        issuer: 'Avixa',
+        title: 'Elements of Setup and Verification',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '63',
+        issuer: 'Avixa',
+        title: 'Networking Technology',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '64',
+        issuer: 'Avixa',
+        title: 'Project Management for AV',
+        image: '/images/icons/avixa2.png'
+    },
+    {
+        id: '6',
+        issuer: 'Biamp',
+        title: 'Audia',
+        image: '/images/icons/biamp.png'
+    },
+    {
+        id: '5',
+        issuer: 'Biamp',
+        title: 'TesiraForte',
+        image: '/images/icons/biamp.png'
+    },
+    {
+        id: '9',
+        issuer: 'Biamp',
+        title: 'VoIP',
+        image: '/images/icons/biamp.png'
+    },
+    {
+        id: '7',
+        issuer: 'Clearone',
+        title: 'AudioVideo Distribution and Control',
+        image: '/images/icons/clearone.png'
+    },
+    {
+        id: '13',
+        issuer: 'Clearone',
+        title: 'Collaborate Video Conferencing',
+        image: '/images/icons/clearone.png'
+    },
+    {
+        id: '9',
+        issuer: 'Clearone',
+        title: 'Digital Signage',
+        image: '/images/icons/clearone.png'
+    },
+    {
+        id: '10',
+        issuer: 'Clearone',
+        title: 'Media Carts',
+        image: '/images/icons/clearone.png'
+    },
+    {
+        id: '24',
+        issuer: 'Clearone',
+        title: 'Personal Conferencing',
+        image: '/images/icons/clearone.png'
+    },
+    {
+        id: '29',
+        issuer: 'Clearone',
+        title: 'TableTop Conferencing',
+        image: '/images/icons/clearone.png'
+    },
+    {
+        id: '66',
+        issuer: 'Crestron',
+        title: 'Certified Audio Technician',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '4',
+        issuer: 'Crestron',
+        title: 'CTI-P101',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '57',
+        issuer: 'Crestron',
+        title: 'CTI-201',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '61',
+        issuer: 'Crestron',
+        title: 'CTI-Fusion-P',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '62',
+        issuer: 'Crestron',
+        title: 'CTI-SG',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '3',
+        issuer: 'Crestron',
+        title: 'DMC-D-4K',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '2',
+        issuer: 'Crestron',
+        title: 'RL-C',
+        image: '/images/icons/crestron.png'
+    },
+    {
+        id: '30',
+        issuer: 'HDBaseT',
+        title: 'Installer',
+        image: '/images/icons/hdbaset.jpg'
+    },
+    {
+        id: '16',
+        issuer: 'Extron',
+        title: 'EAVA',
+        image: '/images/icons/extron.png'
+    },
+    {
+        id: '65',
+        issuer: 'Extron',
+        title: 'Extron Control Professional',
+        image: '/images/icons/extron.png'
+    },
+    {
+        id: '8',
+        issuer: 'Mersive',
+        title: 'Solstice',
+        image: '/images/icons/mersive.png'
+    },
+    {
+        id: '32',
+        issuer: 'Peerless',
+        title: 'Bronze Level Certification',
+        image: '/images/icons/peerless.png'
+    },
+    {
+        id: '1',
+        issuer: 'Sheffield',
+        title: 'Techworks Completion Certificate',
+        image: '/images/icons/sheffield.png'
+    },
+    {
+        id: '67',
+        issuer: 'Shure',
+        title: 'Voice Lift System Design',
+        image: '/images/icons/shure.png'
+    },
+    {
+        id: '33',
+        issuer: 'SMART',
+        title: '33918 Meeting Pro Technical Training',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '54',
+        issuer: 'SMART',
+        title: '33925 Room System Technical Training',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '34',
+        issuer: 'SMART',
+        title: '33995 Tech Professional for Business',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '51',
+        issuer: 'SMART',
+        title: '40012 Installer Training',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '52',
+        issuer: 'SMART',
+        title: '40013 Introducing SMART Products',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '53',
+        issuer: 'SMART',
+        title: '40014 Preparing to Install',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '42',
+        issuer: 'SMART',
+        title: '40018 Professional for Education',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '48',
+        issuer: 'SMART',
+        title: '40019 Amp Technical Training',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '39',
+        issuer: 'SMART',
+        title: '40020 SMART Notebook 18',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '41',
+        issuer: 'SMART',
+        title: '40021 SMART Board M600 series',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '40',
+        issuer: 'SMART',
+        title: '40022 SMART Board 800 series',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '35',
+        issuer: 'SMART',
+        title: '40023 Board 2000 and 2000 Pro series',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '36',
+        issuer: 'SMART',
+        title: '40025 Board 6000 and 6000 Pro series',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '37',
+        issuer: 'SMART',
+        title: '40026 Board 7000 and 7000 Pro series',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '47',
+        issuer: 'SMART',
+        title: '40027 Installing Interactive Displays',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '49',
+        issuer: 'SMART',
+        title: '40028 Interactive Whiteboard Systems',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '50',
+        issuer: 'SMART',
+        title: '40029 Kapp Boards',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '53',
+        issuer: 'SMART',
+        title: '40030 Installing Accessories',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '43',
+        issuer: 'SMART',
+        title: '43001 Board MX series ',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '44',
+        issuer: 'SMART',
+        title: '43002 SMART Board MX100 series',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '38',
+        issuer: 'SMART',
+        title: '43003 Podium 624 and 624 Pro',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '45',
+        issuer: 'SMART',
+        title: '43004 Learning Suite Online',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '46',
+        issuer: 'SMART',
+        title: '43005 iQ Experience',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '55',
+        issuer: 'SMART',
+        title: 'Room System with Skype for Business',
+        image: '/images/icons/smart.png'
+    },
+    {
+        id: '31',
+        issuer: 'Symetrix',
+        title: 'SymNet Composer Certification',
+        image: '/images/icons/symetrix.png'
+    },
 ];
