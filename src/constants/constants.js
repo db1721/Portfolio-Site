@@ -1,5 +1,22 @@
 export const projects = [
   {
+    title: 'Album Finder',
+    description: "A framework that uses the MusicBrainz and YouTube API to find and download albums. Uses EasyID3 to add metadata",
+      image: '/images/projects/album.jpg',
+      tags: ['Python', 'API'],
+    source: 'https://github.com/db1721/Album-Finder',
+    id: 6,
+  },
+  {
+    title: 'Webull Trading Bot',
+    description: "A framework that uses the Webull API to buy and sell stocks, creating a personalized weighted portfolio. "
+    + "Includes an algorithm to calculate intrinsic value of favorite stocks",
+      image: '/images/projects/trading.jpg',
+      tags: ['Python', 'API'],
+    source: 'https://github.com/db1721/Webull_Trading_Bot',
+    id: 6,
+  },
+  {
     title: 'TinDog Website',
     description: "A one page website advertising an app that is like Tinder for dogs. The webiste is " 
     + "hosted with Netlify.",

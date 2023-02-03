@@ -29,6 +29,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             C<br/>
+            C#<br/>
             C++<br/>
             Java<br/>
             Node<br/>
@@ -52,6 +53,7 @@ const Technologies = () =>  (
             Eclispe<br/>
             Github<br/>
             GIT<br/>
+            IntelliJ<br/>
             MongoDB<br/>
             VS Code<br/>
             NetBeans<br/>
