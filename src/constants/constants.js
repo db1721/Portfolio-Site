@@ -1,4 +1,33 @@
-export const projects = [{
+import YearsSince from "../utils/YearsSince";
+
+export const projects = [
+    {
+        title: 'Workout Builder',
+        description: `
+        This is a dynamic, web‑based fitness platform that helps you design, log and track every workout—no matter what gear you own. By pulling from your personal equipment profile, it automatically suggests exercises and builds custom routines, complete with rep, set and weight logging
+        
+        Try it yourself:
+        Username: testuser
+        Password: TestPass123!
+            `.trim(),
+        image: '/images/projects/default-exercise.png',
+        tags: ['Django', 'NextJS', 'TypeScript', 'Redux', 'AWS'],
+        source: '',
+        visit: 'https://workout-builder-ui.vercel.app/',
+        id: 1,
+    },
+    {
+        title: 'Expense Tracking App',
+        description: "A simple react Expense Tracker, that uses State Management in React, Context API, " +
+            "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add " +
+            "income and expenses. The app is hosted with Netlify.",
+        image: '/images/projects/expense.png',
+        tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
+        visit: 'https://beck-expense-tracker-app.netlify.app/',
+        source: 'https://github.com/db1721/Expense-Tracker',
+        id: 5,
+    },
+    {
         title: 'Album Finder',
         description: "A framework that uses the MusicBrainz and YouTube API to find and download albums. Uses EasyID3 to add metadata",
         image: '/images/projects/album.jpg',
@@ -13,89 +42,91 @@ export const projects = [{
         image: '/images/projects/trading.jpg',
         tags: ['Python', 'API'],
         source: 'https://github.com/db1721/Webull_Trading_Bot',
-        id: 6,
-    },
-    {
-        title: 'TinDog Website',
-        description: "A one page website advertising an app that is like Tinder for dogs. The webiste is " +
-            "hosted with Netlify.",
-        image: '/images/projects/TinDog.png',
-        tags: ['BootStrap', 'CSS', 'HTML', 'Netlify'],
-        visit: 'https://beck-tindog.netlify.app/',
-        source: 'https://github.com/db1721/AngelaYu-WebDevelopmentBootcamp/tree/TinDog',
-        id: 6,
-    },
-    {
-        title: 'Expense Tracking App',
-        description: "A simple react Expense Tracker, that uses State Management in React, Context API, " +
-            "Local Storage, and Material UI. The app uses Speechly to use voice capabilities to add " +
-            "income and expenses. The app is hosted with Netlify.",
-        image: '/images/projects/expense.png',
-        tags: ['React', 'JavaScript', 'Netlify', 'SpeechlyAPI'],
-        visit: 'https://beck-expense-tracker-app.netlify.app/',
-        source: 'https://github.com/db1721/Expense-Tracker',
-        id: 5,
-    },
-    {
-        title: 'Traffic Simulator',
-        description: 'A Java Swing GUI that displays time, traffic signals and other information for traffic analysts. ' +
-            'User has the ability to start, pause, stop and add cars to the simulation.',
-        image: '/images/projects/trafficapp.png',
-        tags: ['Java'],
-        visit: 'https://github.com/db1721/TrafficSimulator/tree/App',
-        source: 'https://github.com/db1721/TrafficSimulator/tree/main',
         id: 4,
-    },
-    {
-        title: 'Directed Graph',
-        description: "A program that creates a directed graph from a text file and sorts classes from a text file using depth-first search.",
-        image: '/images/projects/directed-graph.png',
-        tags: ['Java'],
-        source: 'https://github.com/db1721/Directed-Graph/tree/main',
-        visit: 'https://github.com/db1721/Directed-Graph/tree/App',
-        id: 3,
-    },
-    {
-        title: 'Web App Password',
-        description: 'A simple web app that allows a user to create an account or sign in. The program compares a created password' +
-            ' to a text file of known common passwords and will not allow the user to use those passwords. ' +
-            'All user log in information is stored to a .csv file.',
-        image: '/images/projects/webapp.png',
-        tags: ['Python', 'Flask'],
-        source: 'https://github.com/db1721/Web-App-Password/tree/main',
-        visit: 'https://github.com/db1721/Web-App-Password/tree/App',
-        id: 2,
-    },
-    {
-        title: 'Real Estate Management',
-        description: 'A Java program that initializes a GUI that the user can store/recall/edit details of a property. ' +
-            'The details of the property being stored are, the property address, number of bedrooms, square footage, price, ' +
-            'and the status of the property, and are stored in a TreeMap.',
-        image: '/images/projects/propertyManagement.png',
-        tags: ['Java'],
-        source: 'https://github.com/db1721/RealEstateManagement/tree/main',
-        visit: 'https://github.com/db1721/RealEstateManagement/tree/App',
-        id: 1,
     },
 ];
 
 export const TimeLineData = [
-    { year: 1, text: 'Adaptability', },
-    { year: 2, text: 'Creativity', },
-    { year: 3, text: 'Problem-Solving', },
-    { year: 4, text: 'Lifelong Learner', },
-    { year: 5, text: 'Self-Motivated', },
+    {year: 1, text: 'Adaptability',},
+    {year: 2, text: 'Creativity',},
+    {year: 3, text: 'Problem-Solving',},
+    {year: 4, text: 'Lifelong Learner',},
+    {year: 5, text: 'Self-Motivated',},
 ];
 
 export const myImage = [
-    { image: '/images/dog.png', },
+    {image: '/images/dog.png',},
 ];
 
-export const certificates = [{
+export const certificates = [
+    {
+        id: '20',
+        issuer: 'Databricks',
+        title: 'AWS Certified Solutions Architect - Associate',
+        image: '/images/icons/db.jpg',
+        pdfUrl: '/images/certs/(2025-01-08) Databricks Fundamentals Accreditation.pdf',
+    },
+    {
+        id: '19',
+        issuer: 'SAFe',
+        title: 'SAFe DevOps Practitioner',
+        image: '/images/icons/certified-safe-6-devops-practitioner.png',
+        pdfUrl: '/images/certs/(2024-06-08) SAFe DevOps Practitioner.pdf',
+    },
+    {
+        id: '18',
+        issuer: 'AWS',
+        title: 'AWS Certified Solutions Architect - Associate',
+        image: '/images/icons/aws-certified-solutions-architect-associate.png',
+        pdfUrl: '/images/certs/(2024-03-01) AWS Certified Solutions Architect - Associate certificate.pdf',
+    },
+    {
+        id: '17',
+        issuer: 'AWS',
+        title: 'AWS Shared Responsibility Model',
+        image: '/images/icons/aws_logo_cloud.png',
+        pdfUrl: '/images/certs/(2023-12-01) AWS Shared Responsibility Model.pdf',
+    },
+    {
+        id: '16',
+        issuer: 'AWS',
+        title: 'AWS Cloud Quest - Solutions Architect',
+        image: '/images/icons/aws-cloud-quest-solutions-architect.png',
+    },
+    {
+        id: '15',
+        issuer: 'AWS',
+        title: 'AWS Billing and Cost Management',
+        image: '/images/icons/aws_logo_cloud.png',
+        pdfUrl: '/images/certs/AWS Billing and Cost Management.pdf'
+    },
+    {
+        id: '14',
+        issuer: 'Udemy',
+        title: 'AWS Lambda - A Practical Guide',
+        image: '/images/icons/udemy.png',
+        pdfUrl: '/images/certs/(2023-06-21) AWS Lambda - A Practical Guide.pdf'
+    },
+    {
+        id: '14',
+        issuer: 'Scrum Alliance',
+        title: 'Certified Scrum Master',
+        image: '/images/icons/seal-csm.png',
+        pdfUrl: '/images/certs/(2023-02-27) CSM - Certified Scrum Master.pdf'
+    },
+    {
+        id: '13',
+        issuer: 'Open EDG',
+        title: 'Certified Entry-Level Python Programmer',
+        image: '/images/icons/pcep-30-02-medium.png',
+        pdfUrl: '/images/certs/(2023-02-26) PCEP – Certified Entry-Level Python Programmer.pdf'
+    },
+    {
         id: '12',
         issuer: 'AWS',
         title: 'Certified Cloud Practitioner',
-        image: '/images/icons/aws-certified-cloud-practitioner.png'
+        image: '/images/icons/aws-certified-cloud-practitioner.png',
+        pdfUrl: '/images/certs/(2022-12-16) AWS Certified Cloud Practitioner.pdf'
     },
     {
         id: '11',
@@ -107,85 +138,29 @@ export const certificates = [{
         id: '10',
         issuer: 'AWS',
         title: 'AWS Technical Essentials',
-        image: '/images/icons/aws_logo_cloud.png'
+        image: '/images/icons/aws_logo_cloud.png',
+        pdfUrl: '/images/certs/(2022-10-18) AWS Technical Essentials.pdf'
     },
     {
         id: '09',
         issuer: 'EDx',
         title: 'Python for Everybody',
-        image: '/images/icons/python_for_everybody_logo.png'
+        image: '/images/icons/python_for_everybody_logo.png',
+        pdfUrl: '/images/certs/(2022-07-12) Programming for Everybody.pdf'
     },
     {
         id: '08',
         issuer: 'SAFe',
         title: 'SAFe 5 Agilist',
-        image: '/images/icons/safe_agilist.png'
-    },
-    {
-        id: '07',
-        issuer: 'SoloLearn',
-        title: 'HTML',
-        image: '/images/icons/sololearn.png'
-    },
-    {
-        id: '06',
-        issuer: 'SoloLearn',
-        title: 'Java',
-        image: '/images/icons/sololearn.png'
-    },
-    {
-        id: '05',
-        issuer: 'SoloLearn',
-        title: 'Python',
-        image: '/images/icons/sololearn.png'
-    },
-    {
-        id: '04',
-        issuer: 'SoloLearn',
-        title: 'Data Science with Python',
-        image: '/images/icons/sololearn.png'
-    },
-    {
-        id: '03',
-        issuer: 'SoloLearn',
-        title: 'SQL',
-        image: '/images/icons/sololearn.png'
-    },
-    {
-        id: '02',
-        issuer: 'SoloLearn',
-        title: 'Ruby',
-        image: '/images/icons/sololearn.png'
-    },
-    {
-        id: '13',
-        issuer: 'Crestron',
-        title: 'CTI-P101',
-        image: '/images/icons/crestron.png'
-    },
-    {
-        id: '14',
-        issuer: 'Crestron',
-        title: 'CTI-201',
-        image: '/images/icons/crestron.png'
-    },
-    {
-        id: '15',
-        issuer: 'Crestron',
-        title: 'CTI-Fusion-P',
-        image: '/images/icons/crestron.png'
-    },
-    {
-        id: '16',
-        issuer: 'Crestron',
-        title: 'CTI-SG',
-        image: '/images/icons/crestron.png'
+        image: '/images/icons/safe_agilist.png',
+        pdfUrl: '/images/certs/(2022-05-02) SAFe Agilist.pdf'
     },
     {
         id: '01',
         issuer: 'Microsoft',
         title: 'Microsoft Excel 2016',
-        image: '/images/icons/microsoft.png'
+        image: '/images/icons/microsoft.png',
+        pdfUrl: '/images/certs/(2019-05-15) Microsoft Excel 2016.pdf'
     },
 ];
 
@@ -604,5 +579,152 @@ export const avCertificates = [
         issuer: 'Symetrix',
         title: 'SymNet Composer Certification',
         image: '/images/icons/symetrix.png'
+    },
+];
+
+export const experience = [
+
+    {
+        id: 8,
+        company: 'Index Analytics',
+        logo: '/images/icons/index.jpg',
+        role: 'UI Developer',
+        startDate: 'Jan 2025',
+        endDate: 'Present',
+        description: [
+            'Designed and developed a Retrieval-Augmented Generation (RAG) AI application interface using Next.js, delivering a clean and responsive UI with seamless user interactions',
+            'Integrated API endpoints, with Redux, to support dynamic AI-based content generation, ensuring fast retrieval and accurate contextual output',
+            'Collaborated closely with backend and data teams to refine prompt engineering and optimize the overall RAG pipeline',
+            'Focused on performance, accessibility, and UI/UX best practices to elevate the front-end experience',
+        ],
+    },
+    {
+        id: 8,
+        company: 'Index Analytics',
+        logo: '/images/icons/index.jpg',
+        role: 'DevOps Engineer',
+        startDate: 'Nov 2024',
+        endDate: 'Present',
+        description: [
+            "Assist in the evaluation and recommendation of application software packages, and application integration and testing tools",
+            'Created and maintained AWS CloudFormation templates to provision and manage infrastructure across development, staging, and production environments',
+            'Implemented repeatable and secure deployment patterns, reducing manual configuration errors and improving infrastructure consistency',
+        ],
+    },
+    {
+        id: 7,
+        company: 'Index Analytics',
+        logo: '/images/icons/index.jpg',
+        role: 'Full Stack Developer',
+        startDate: 'Jan 2024',
+        endDate: 'Present',
+        description: [
+            'Creation of AWS architectural designs for application planning',
+            'Integrated a regression testing framework into the application lifecycle, enabling early detection of defects and improved release quality',
+            'Designed and implemented custom algorithms to reduce API latency and increase database query efficiency and improve application performance',
+        ],
+    },
+    {
+        id: 6,
+        company: 'Index Analytics',
+        logo: '/images/icons/index.jpg',
+        role: 'Jr. Full Stack Developer',
+        startDate: 'Jun 2022',
+        endDate: 'Jan 2024',
+        description: [
+            'Developed a full-stack AWS application that enabled users to upload and validate forms against complex rule sets',
+            'Built interactive Angular components for seamless user experience, and connected them to Python-based validation services hosted on AWS Lambda',
+            'Configured Route 53 for domain routing and developed custom CloudFormation templates to provision IAM roles, Lambda functions, VPC security groups, and AWS Secrets Manager',
+            'Designed a scalable framework to migrate hundreds of thousands of legacy form files (TXT/CSV) into a structured PostgreSQL database',
+            'Improved processing throughput and reduced data migration time by optimizing batch operations and parallel processing logic',
+        ],
+    },
+    {
+        id: 6,
+        company: 'Skyward',
+        logo: '/images/icons/skyward.jpg',
+        role: 'Mid-Level Software Developer',
+        startDate: 'Jun 2022',
+        endDate: 'Apr 2023',
+        description: [
+            "Development of Python framework that automates a multitude of tasks through mainframe integration with various APIs",
+            "Development of Python framework that automates end‑to‑end testing through a mainframe",
+            "Continuous GitHub PR creation and reviews",
+            "Creation and editing of technical documents including Software Architecture Diagrams, Unit Test Coverage reports, Feature Matrices, User Guides, Test Results Reports, and System Design Documents",
+            "Demos to CMS stakeholders on products developed",
+            "Utilization of Teams, Slack, Zoom, Jira, and Confluence for team collaboration",
+            "Frequent participation in sprint‑ending demos showcasing newly built features, process improvements, and new skills learned",
+            "Architecting a framework that automates mainframe tasks by processing data in JSON, Excel, and CSV formats—turning days of manual labor into minutes",
+        ],
+    },
+    {
+        id: 5,
+        company: 'Skyward',
+        logo: '/images/icons/skyward.jpg',
+        role: 'Jr. Developer',
+        startDate: 'Nov 2021',
+        endDate: 'Jun 2022',
+        description: [
+            "Design, develop, enhance, debug, and implement software in an agile development environment",
+            "Apply emerging automated build, test, and deployment capabilities; help develop project teams toward integrating solutions",
+            "Mentor and guide team members who have less experience",
+            "Address problems identified with system integration and capability during testing and implementation of developed software in support of customer objectives",
+            "Consult with project teams and end users to identify software requirements",
+            "Assist in the evaluation and recommendation of application software packages, and application integration and testing tools",
+            "Resolve issues and problems with developed software and respond to suggestions for improvements and enhancements",
+            "Participate in the development of software documentation such as training/user manuals",
+        ],
+    },
+    {
+        id: 4,
+        company: 'Visual Sound Inc.',
+        logo: '/images/icons/visual_sound_logo.jpg',
+        role: 'Field Commissioning Engineer',
+        startDate: 'Feb 2018',
+        endDate: 'Oct 2021',
+        description: [
+            'Generation of modules in Simpl Windows and Simpl+ (C# language) to integrate new technology into legacy systems',
+            'Designing, implementation, and updating of user interfaces with VTPro-e',
+            'Building code for A/V classrooms and workspaces that varied from simple conference rooms to complex rooms for divisible spaces from a central control system',
+            'Managing/Coordinating multiple jobs from initial installation through commissioning of the system',
+            'Fielding of service calls that consisted of anything from hardware issues to locating/mitigating software bugs',
+            'Programming of audio systems in Symmetrix, Biamp, and ClearOne',
+        ],
+    },
+    {
+        id: 3,
+        company: 'Cenero',
+        logo: '/images/icons/cenero_logo.jpg',
+        role: 'Technical Service Engineer/Field Service Engineer',
+        startDate: 'Aug 2016',
+        endDate: 'Feb 2018',
+        description: [
+            'Servicing/Commissioning of new and legacy A/V systems',
+            'Continuous management of multiple service tickets that involved coordinating, scheduling, generating quotes and site visits',
+        ],
+    },
+    {
+        id: 2,
+        company: 'Visual Sound Inc.',
+        logo: '/images/icons/visual_sound_logo.jpg',
+        role: 'Installer',
+        startDate: 'Jan 2015',
+        endDate: 'Aug 2016',
+        description: [
+            'Servicing/Commissioning of new and legacy A/V systems',
+        ],
+    },
+    {
+        id: 1,
+        company: 'Design & Integration, Inc.',
+        logo: '/images/icons/design_and_integration_logo.jpg',
+        role: 'Fabrication Manager',
+        startDate: 'Jan 2012',
+        endDate: 'Dec 2014',
+        description: [
+            'Creatively and cleanly built racks, keeping a consistent design and standard throughout multiple jobs',
+            'Developed plans for individuals and teams to effectively complete racks on-time and under hours',
+            'Worked closely with design engineers to develop consistent and accurate designs for A/V racks',
+        ]
     },
 ];

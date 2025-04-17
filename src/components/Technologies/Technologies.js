@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiIonic, DiAtom } from 'react-icons/di';
+import { DiFirebase, DiReact, DiIonic, DiAtom, DiCode } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -8,66 +8,66 @@ const Technologies = () =>  (
     <SectionDivider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      {/* I have worked with a range of technologes in the web development world. 
+      {/* I have worked with a range of technologies in the web development world.
       From Back-end to Design */}
     </SectionText>
     <List>
+      {/* LANGUAGES */}
       <ListItem>
-        <DiReact size="3rem"/>
+        <DiCode size="3rem" />
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Languages</ListTitle>
           <ListParagraph>
-            CSS<br/>
-            HTML<br/>
-            Javascipt<br/>
+            • JavaScript / TypeScript<br/>
+            • HTML5 / CSS3<br/>
+            • Python<br/>
+            • Java<br/>
+            • C# / C++<br/>
+            • SQL / NoSQL (MongoDB, DynamoDB)<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
+
+      {/* FRAMEWORKS & LIBRARIES */}
       <ListItem>
-        <DiFirebase size="3rem"/>
+        <DiReact size="3rem" />
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Frameworks & Libraries</ListTitle>
           <ListParagraph>
-            C<br/>
-            C#<br/>
-            C++<br/>
-            Java<br/>
-            Node<br/>
-            Python<br/>
-            Ruby<br/>
-            SQL<br/>
+            • React.js / Next.js<br/>
+            • Django<br/>
+            • Express.js / Node.js<br/>
+            • Bootstrap / Tailwind CSS<br/>
+            • Angular<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
+
+      {/* CLOUD & DEVOPS */}
       <ListItem>
-        <DiIonic size="3rem"/>
+        <DiFirebase size="3rem" />
         <ListContainer>
-          <ListTitle>Development Tools</ListTitle>
+          <ListTitle>Cloud & DevOps</ListTitle>
           <ListParagraph>
-            Atom<br/>
-            AWS<br/>
-            Azure<br/>
-            Cloud9 IDE<br/>
-            CodeBlocks<br/>
-            DynamoDB<br/>
-            Eclispe<br/>
-            Github<br/>
-            GIT<br/>
-            IntelliJ<br/>
-            MongoDB<br/>
-            VS Code<br/>
-            NetBeans<br/>
+            • AWS (EC2, S3, Lambda, CloudFormation, RDS)<br/>
+            • Docker<br/>
+            • CI/CD: GitHub Actions, Jenkins<br/>
+            • Cloud9 IDE<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
+
+      {/* TOOLS & EDITORS */}
       <ListItem>
-        <DiAtom size="3rem"/>
+        <DiAtom size="3rem" />
         <ListContainer>
-          <ListTitle>Frameworks</ListTitle>
+          <ListTitle>Tools & IDEs</ListTitle>
           <ListParagraph>
-            Bootstrap<br/>
-            Flask<br/>
-            React.js<br/>
+            • VS Code / IntelliJ IDEA<br/>
+            • Git / GitHub / GitLab<br/>
+            • Postman<br/>
+            • CodeBlocks / Eclipse / NetBeans<br/>
+            • Chrome DevTools<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>

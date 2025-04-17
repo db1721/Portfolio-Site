@@ -28,10 +28,17 @@ const Projects = () => (
                 ))}
               </TagList>
             </div>
-            <UtilityList>
-              <ExternalLinks href={visit}>Program</ExternalLinks>
-              <ExternalLinks href={source}>Source</ExternalLinks>
-            </UtilityList>
+              {/* only render UtilityList if at least one link is provided */}
+              {(visit || source) && (
+                  <UtilityList>
+                      {visit && (
+                          <ExternalLinks href={visit}>Program</ExternalLinks>
+                      )}
+                      {source && (
+                          <ExternalLinks href={source}>Source</ExternalLinks>
+                      )}
+                  </UtilityList>
+              )}
           </BlogCard>
         ))}
       </GridContainer>

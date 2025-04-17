@@ -1,10 +1,19 @@
+'use client'
 import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
+import {aboutMe, TimeLineData} from '../../constants/constants';
+import styled from "styled-components";
+import YearsSince from "../../utils/YearsSince";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+
+export const AboutText = styled.div`
+  white-space: pre-line;   /* collapse multiple spaces, but honor newlines */
+  /* or: white-space: pre-wrap;  to also honor multiple spaces */
+  line-height: 1.5;
+`
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
@@ -47,15 +56,31 @@ const Timeline = () => {
       <SectionDivider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      I was introduced to programming Audio/Video systems almost 8 years ago, creating GUIs using VT-Pro, 
-      programming control systems with Simpl Windows and Simpl+ (C# language), and debugging or updating 
-      code in the field. After working with A/V software development programs for 6 years, I grew a 
-      passion to learn more about software development, leading me to pursue a bachelor’s degree in 
-      Software Development & Security. After completing my degree, I have spent almost two years focusing 
-      on backend development and AWS. I currently am working with Python development while studying for achieve 
-      the AWS Developer Cert.
+        <p>
+          I began my journey in tech{' '}
+          <YearsSince date="2015-01-01"/>{' '}
+          years ago by programming Audio/Video systems—building custom GUIs with VT‑Pro, writing control logic in Simpl
+          Windows and Simpl+, and troubleshooting systems on‑site. After years in the A/V software space, my
+          curiosity for broader software development led me to complete my bachelor’s degree in Software Development &
+          Security.
+        </p><br/>
+        <p>
+          Since then, I’ve transitioned into full stack development with a strong focus on cloud technologies. Over the
+          past {' '}
+          <YearsSince date="2021-11-01"/>{' '} years, I’ve been developing in Python and working extensively with AWS,
+          building scalable,
+          cloud‑native applications. I currently hold the AWS Solutions Architect Associate certification and am
+          actively pursuing the AWS Developer Associate certification.
+        </p><br/>
+        <p>
+          My goal is to grow into a Solutions Architect role where I can combine my technical expertise with creative
+          problem solving to design efficient, scalable systems that meet real‑world business needs. I’m drawn to the
+          versatility of the role—it allows me to collaborate across teams, understand and shape system architecture at
+          a high level, and apply innovative thinking to complex challenges. It’s the perfect intersection of strategy,
+          creativity, and engineering, and I’m excited to continue building toward it.
+        </p>
       </SectionText>
-        <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
           <>
             {TimeLineData.map((item, index) => (
               <CarouselMobileScrollNode key={index} final {...index === TOTAL_CAROUSEL_COUNT - 1}>

@@ -1,43 +1,54 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import React from 'react'
+import Document, {Head, Html, Main, NextScript} from 'next/document'
+import {ServerStyleSheet} from 'styled-components'
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+    static async getInitialProps(ctx) {
+        const sheet = new ServerStyleSheet()
+        const originalRenderPage = ctx.renderPage
 
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        })
+        try {
+            ctx.renderPage = () =>
+                originalRenderPage({
+                    enhanceApp: App => props =>
+                        sheet.collectStyles(<App {...props} />),
+                })
 
-      const initialProps = await Document.getInitialProps(ctx)
-      return {
-        ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        ),
-      }
-    } finally {
-      sheet.seal()
+            const initialProps = await Document.getInitialProps(ctx)
+            return {
+                ...initialProps,
+                // this ensures your styled-components' <style> tags
+                // are rendered on the server and sent to the client
+                styles: (
+                    <>
+                        {initialProps.styles}
+                        {sheet.getStyleElement()}
+                    </>
+                ),
+            }
+        } finally {
+            sheet.seal()
+        }
     }
-  }
-  render() {
-    return (
-      <Html lang='en-GB'>
-        <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+
+    render() {
+        return (
+            <Html lang="en-GB">
+                <Head>
+                    {/* styled-components rendered styles */}
+                    {this.props.styles}
+
+                    {/* any other <Head> tags you need */}
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+                        rel="stylesheet"
+                    />
+                </Head>
+                <body>
+                <Main/>
+                <NextScript/>
+                </body>
+            </Html>
+        )
+    }
 }
