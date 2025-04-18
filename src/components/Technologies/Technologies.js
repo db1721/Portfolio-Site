@@ -53,6 +53,8 @@ const Technologies = () =>  (
             • Docker<br/>
             • CI/CD: GitHub Actions, Jenkins<br/>
             • Cloud9 IDE<br/>
+            • Snyk<br/>
+            • SonarQube<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
