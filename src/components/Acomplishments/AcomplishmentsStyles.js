@@ -9,7 +9,7 @@ export const Boxes = styled.div`
     margin: 24px 0 40px;
 
     @media ${props => props.theme.breakpoints.md} {
-        /* auto‑fit smaller cards on medium */
+        /* auto-fit smaller cards on medium */
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 16px;
         margin: 20px 0 32px;
@@ -26,7 +26,7 @@ export const Boxes = styled.div`
 
 /* Each card */
 export const Box = styled.div`
-    position: relative;       /* for the top‑right icon and modal */
+    position: relative;       /* for the top-right icon and modal */
     background: #212D45;
     border-radius: 12px;
     padding: 24px;
@@ -79,7 +79,7 @@ export const BoxText = styled.p`
     }
 `;
 
-/* Logo in top‑right corner */
+/* Logo in top-right corner */
 export const BoxIcon = styled.img`
     position: absolute;
     top: 24px;
@@ -89,7 +89,7 @@ export const BoxIcon = styled.img`
     object-fit: contain;
 `;
 
-/* Full‑screen dark overlay */
+/* Full-screen dark overlay */
 export const ModalOverlay = styled.div`
     position: fixed;
     top: 10%;

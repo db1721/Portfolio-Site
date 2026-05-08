@@ -6,7 +6,7 @@ export const ExperienceSection = styled.section`
   padding: 80px 0;
 `;
 
-/* The “Experience” heading */
+/* The "Experience" heading */
 export const SectionHeader = styled.h2`
   text-align: center;
   margin-bottom: 40px;
@@ -25,7 +25,7 @@ export const CompanyHeader = styled.div`
   margin-bottom: 16px;
 `;
 
-/* Company’s logo */
+/* Company's logo */
 export const CompanyLogo = styled.img`
   width: 48px;
   height: 48px;
@@ -70,7 +70,7 @@ export const RoleDetails = styled.div`
     margin: 40px 0;
 `;
 
-/* Role title (e.g. “Full‑Stack Developer”) */
+/* Role title (e.g. "Full-Stack Developer") */
 export const RoleTitle = styled.div`
   font-weight: 600;
   font-size: 2rem;

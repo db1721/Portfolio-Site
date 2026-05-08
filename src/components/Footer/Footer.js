@@ -10,26 +10,26 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
         <LinkTitle>Call</LinkTitle>
-        <LinkItem href="tel: 443-416-5096">443-416-5096</LinkItem>
+        <LinkItem href="tel:4434165096">443-416-5096</LinkItem>
         </LinkColumn>
         <LinkColumn>
         <LinkTitle>Email</LinkTitle>
-        <LinkItem href="tel: contact@danielbeckjr.com">Contact@DanielBeckJr.com</LinkItem>
+        <LinkItem href="mailto:contact@danielbeckjr.com">Contact@DanielBeckJr.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         
         <CompanyContainer>
-            <Slogan><i>“Tell me and I forget, teach me and I may remember, involve me and I learn.”</i><small> ―Benjamin Franklin</small></Slogan>
+            <Slogan><i>"Tell me and I forget, teach me and I may remember, involve me and I learn."</i><small> - Benjamin Franklin</small></Slogan>
         </CompanyContainer>
         <SocialContainer>
-        <SocialIcons href="https://github.com/db1721">
+        <SocialIcons href="https://github.com/db1721" target="_blank" rel="noreferrer" aria-label="GitHub profile">
         <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://linkedin.com/in/daniel-beck-18700aa7/">
+        <SocialIcons href="https://linkedin.com/in/daniel-beck-18700aa7/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://www.facebook.com/dan.beck.58726/">
+        <SocialIcons href="https://www.facebook.com/dan.beck.58726/" target="_blank" rel="noreferrer" aria-label="Facebook profile">
           <AiFillFacebook size="3rem" />
         </SocialIcons>
         </SocialContainer>

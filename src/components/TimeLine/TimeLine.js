@@ -1,27 +1,21 @@
-'use client'
 import React, { useState, useRef, useEffect } from 'react';
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import {aboutMe, TimeLineData} from '../../constants/constants';
-import styled from "styled-components";
-import YearsSince from "../../utils/YearsSince";
+import { TimeLineData } from '../../constants/constants';
+import YearsSince from '../../utils/YearsSince';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
-
-export const AboutText = styled.div`
-  white-space: pre-line;   /* collapse multiple spaces, but honor newlines */
-  /* or: white-space: pre-wrap;  to also honor multiple spaces */
-  line-height: 1.5;
-`
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
+    if (!node) return;
+
+    node.scrollTo({ left, behavior: 'smooth' });
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -31,7 +25,7 @@ const Timeline = () => {
       
       scroll(carouselRef.current, scrollLeft);
     }
-  }
+  };
 
   const handleScroll = () => {
     if (carouselRef.current) {
@@ -39,51 +33,50 @@ const Timeline = () => {
 
       setActiveItem(index);
     }
-  }
+  };
 
-  // snap back to beginning of scroll when window is resized
-  // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
-    }
+    };
 
     window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
     <Section id="about">
       <SectionDivider />
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
+      <SectionText as="div">
         <p>
           I began my journey in tech{' '}
-          <YearsSince date="2015-01-01"/>{' '}
-          years ago by programming Audio/Video systems—building custom GUIs with VT‑Pro, writing control logic in Simpl
-          Windows and Simpl+, and troubleshooting systems on‑site. After years in the A/V software space, my
-          curiosity for broader software development led me to complete my bachelor’s degree in Software Development &
+          <YearsSince date="2015-01-01" />{' '}
+          years ago by programming Audio/Video systems, building custom GUIs with VT-Pro, writing control logic in Simpl
+          Windows and Simpl+, and troubleshooting systems on-site. After years in the A/V software space, my
+          curiosity for broader software development led me to complete my bachelor's degree in Software Development &
           Security.
-        </p><br/>
+        </p><br />
         <p>
-          Since then, I’ve transitioned into full stack development with a strong focus on cloud technologies. Over the
+          Since then, I've transitioned into full stack development with a strong focus on cloud technologies. Over the
           past {' '}
-          <YearsSince date="2021-11-01"/>{' '} years, I’ve been developing in Python and working extensively with AWS,
+          <YearsSince date="2021-11-01" />{' '} years, I've been developing in Python and working extensively with AWS,
           building scalable,
-          cloud‑native applications. I currently hold the AWS Solutions Architect Associate certification and am
+          cloud-native applications. I currently hold the AWS Solutions Architect Associate certification and am
           actively pursuing the AWS Developer Associate certification.
-        </p><br/>
+        </p><br />
         <p>
           My goal is to grow into a Solutions Architect role where I can combine my technical expertise with creative
-          problem solving to design efficient, scalable systems that meet real‑world business needs. I’m drawn to the
-          versatility of the role—it allows me to collaborate across teams, understand and shape system architecture at
-          a high level, and apply innovative thinking to complex challenges. It’s the perfect intersection of strategy,
-          creativity, and engineering, and I’m excited to continue building toward it.
+          problem solving to design efficient, scalable systems that meet real-world business needs. I'm drawn to the
+          versatility of the role because it allows me to collaborate across teams, understand and shape system architecture at
+          a high level, and apply innovative thinking to complex challenges. It's the perfect intersection of strategy,
+          creativity, and engineering, and I'm excited to continue building toward it.
         </p>
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
           <>
             {TimeLineData.map((item, index) => (
-              <CarouselMobileScrollNode key={index} final {...index === TOTAL_CAROUSEL_COUNT - 1}>
+              <CarouselMobileScrollNode key={item.text} final={index === TOTAL_CAROUSEL_COUNT - 1}>
                 <CarouselItem
                   index={index}
                   id={`carousel__item-${index}`}
@@ -99,11 +92,11 @@ const Timeline = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
                       fill="url(#paint0_linear)"
-                      fill-opacity="0.33"
+                      fillOpacity="0.33"
                     />
                     <defs>
                       <linearGradient
@@ -113,17 +106,16 @@ const Timeline = () => {
                         x2="208"
                         y2="0.500295"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" />
+                        <stop stopColor="white" />
                         <stop
                           offset="0.79478"
-                          stop-color="white"
-                          stop-opacity="0"
+                          stopColor="white"
+                          stopOpacity="0"
                         />
                       </linearGradient>
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                  {/* <CarouselItemText>{item.text}</CarouselItemText> */}
                 </CarouselItem>
               </CarouselMobileScrollNode>
             ))}
@@ -132,7 +124,7 @@ const Timeline = () => {
         <CarouselButtons>
           {TimeLineData.map((item, index) => (
             <CarouselButton
-              key={index}
+              key={item.text}
               index={index}
               active={activeItem}
               onClick={(e) => handleClick(e, index)}

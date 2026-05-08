@@ -47,28 +47,33 @@ const Acomplishments = () => {
             <SectionTitle>Certifications</SectionTitle>
 
             <Boxes>
-                {certificates.map(({ id, title, image, issuer, pdfUrl }) => (
+                {certificates.map(({ id, title, image, issuer, pdfUrl }) => {
+                    const certificateKey = `${id}-${issuer}-${title}`;
+
+                    return (
                     <Box
-                        key={id}
-                        onMouseEnter={() => handleMouseEnter(id)}
+                        key={certificateKey}
+                        onMouseEnter={() => handleMouseEnter(certificateKey)}
                         onMouseLeave={handleMouseLeave}
                     >
                         <BoxIcon src={image} alt={`${title} icon`} />
                         <BoxNum>{issuer}</BoxNum>
                         <BoxText>{title}</BoxText>
 
-                        {hovered === id && pdfUrl && (
+                        {hovered === certificateKey && pdfUrl && (
                             <ModalOverlay>
                                 <ModalContent>
                                     <iframe
                                         src={pdfUrl}
+                                        title={`${title} certificate`}
                                         style={{width: '100%', height: '100%', border: 'none'}}
                                     />
                                 </ModalContent>
                             </ModalOverlay>
                         )}
                     </Box>
-                ))}
+                    );
+                })}
             </Boxes>
         </Section>
     );

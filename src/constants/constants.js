@@ -1,17 +1,15 @@
-import YearsSince from "../utils/YearsSince";
-
 export const projects = [
     {
         title: 'Workout Builder',
         description: `
-        This is a dynamic, web‑based fitness platform that helps you design, log and track every workout—no matter what gear you own. By pulling from your personal equipment profile, it automatically suggests exercises and builds custom routines, complete with rep, set and weight logging
+        This is a dynamic, web-based fitness platform that helps you design, log and track every workout, no matter what gear you own. By pulling from your personal equipment profile, it automatically suggests exercises and builds custom routines, complete with rep, set and weight logging.
         
         Try it yourself:
         Username: testuser
         Password: TestPass123!
             `.trim(),
         image: '/images/projects/default-exercise.png',
-        tags: ['Django', 'NextJS', 'TypeScript', 'Redux', 'AWS'],
+        tags: ['Django', 'Next.js', 'TypeScript', 'Redux', 'AWS'],
         source: '',
         visit: 'https://workout-builder-ui.vercel.app/',
         id: 1,
@@ -54,15 +52,11 @@ export const TimeLineData = [
     {year: 5, text: 'Self-Motivated',},
 ];
 
-export const myImage = [
-    {image: '/images/dog.png',},
-];
-
 export const certificates = [
     {
         id: '20',
         issuer: 'Databricks',
-        title: 'AWS Certified Solutions Architect - Associate',
+        title: 'Databricks Fundamentals Accreditation',
         image: '/images/icons/db.jpg',
         pdfUrl: '/images/certs/(2025-01-08) Databricks Fundamentals Accreditation.pdf',
     },
@@ -119,7 +113,7 @@ export const certificates = [
         issuer: 'Open EDG',
         title: 'Certified Entry-Level Python Programmer',
         image: '/images/icons/pcep-30-02-medium.png',
-        pdfUrl: '/images/certs/(2023-02-26) PCEP – Certified Entry-Level Python Programmer.pdf'
+        pdfUrl: '/images/certs/(2023-02-26)%20PCEP%20%E2%80%93%20Certified%20Entry-Level%20Python%20Programmer.pdf'
     },
     {
         id: '12',
@@ -165,71 +159,64 @@ export const certificates = [
 ];
 
 export const avCertificates = [
-    //!Template
-    /*
-    { id: '68', 
-      issuer: 'Issuer',
-      title: 'Title',
-      image: '/images/icons/file.png'},
-    */
     {
         id: '17',
         issuer: 'AMX',
         title: 'CC101 Core Curriculum - Audio Essentials',
-        image: '/images/icons/amx.png'
+        image: '/images/icons/AMX.png'
     },
     {
         id: '18',
         issuer: 'AMX',
         title: 'CC102 Core Curriculum - Cabling Essentials',
-        image: '/images/icons/amx.png'
+        image: '/images/icons/AMX.png'
     },
     {
         id: '19',
         issuer: 'AMX',
         title: 'CC103 Core Curriculum - Control Essentials',
-        image: '/images/icons/amx.png'
+        image: '/images/icons/AMX.png'
     },
     {
         id: '20',
         issuer: 'AMX',
         title: 'CC104 Core Curriculum - Networking Essentials',
-        image: '/images/icons/amx.png'
+        image: '/images/icons/AMX.png'
     },
     {
         id: '21',
         issuer: 'AMX',
         title: 'CC105 Core Curriculum - PC Essentials',
-        image: '/images/icons/amx.png'
+        image: '/images/icons/AMX.png'
     },
     {
         id: '22',
         issuer: 'AMX',
         title: 'CC106 Core Curriculum - Video Essentials',
-        image: '/images/icons/amx.png'
+        image: '/images/icons/AMX.png'
     },
     {
         id: '23',
         issuer: 'AMX',
         title: 'CT160 - Commissioning Associate',
-        image: '/images/icons/amx.png'
+        image: '/images/icons/AMX.png'
     },
     {
         id: '25',
         issuer: 'Audinate',
-        title: 'Daunte Level 1',
+        title: 'Dante Level 1',
         image: '/images/icons/audinate.png'
     },
     {
         id: '26',
         issuer: 'Audinate',
-        title: 'Daunte Level 2',
+        title: 'Dante Level 2',
         image: '/images/icons/audinate.png'
     },
     {
         id: '27',
         issuer: 'Audinate',
-        title: 'Daunte Level 3',
+        title: 'Dante Level 3',
         image: '/images/icons/audinate.png'
     },
     {
@@ -434,145 +421,145 @@ export const avCertificates = [
         id: '33',
         issuer: 'SMART',
         title: '33918 Meeting Pro Technical Training',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '54',
         issuer: 'SMART',
         title: '33925 Room System Technical Training',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '34',
         issuer: 'SMART',
         title: '33995 Tech Professional for Business',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '51',
         issuer: 'SMART',
         title: '40012 Installer Training',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '52',
         issuer: 'SMART',
         title: '40013 Introducing SMART Products',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '53',
         issuer: 'SMART',
         title: '40014 Preparing to Install',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '42',
         issuer: 'SMART',
         title: '40018 Professional for Education',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '48',
         issuer: 'SMART',
         title: '40019 Amp Technical Training',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '39',
         issuer: 'SMART',
         title: '40020 SMART Notebook 18',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '41',
         issuer: 'SMART',
         title: '40021 SMART Board M600 series',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '40',
         issuer: 'SMART',
         title: '40022 SMART Board 800 series',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '35',
         issuer: 'SMART',
         title: '40023 Board 2000 and 2000 Pro series',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '36',
         issuer: 'SMART',
         title: '40025 Board 6000 and 6000 Pro series',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '37',
         issuer: 'SMART',
         title: '40026 Board 7000 and 7000 Pro series',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '47',
         issuer: 'SMART',
         title: '40027 Installing Interactive Displays',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '49',
         issuer: 'SMART',
         title: '40028 Interactive Whiteboard Systems',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '50',
         issuer: 'SMART',
         title: '40029 Kapp Boards',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '53',
         issuer: 'SMART',
         title: '40030 Installing Accessories',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '43',
         issuer: 'SMART',
         title: '43001 Board MX series ',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '44',
         issuer: 'SMART',
         title: '43002 SMART Board MX100 series',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '38',
         issuer: 'SMART',
         title: '43003 Podium 624 and 624 Pro',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '45',
         issuer: 'SMART',
         title: '43004 Learning Suite Online',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '46',
         issuer: 'SMART',
         title: '43005 iQ Experience',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '55',
         issuer: 'SMART',
         title: 'Room System with Skype for Business',
-        image: '/images/icons/smart.png'
+        image: '/images/icons/smart.PNG'
     },
     {
         id: '31',
@@ -648,13 +635,13 @@ export const experience = [
         endDate: 'Apr 2023',
         description: [
             "Development of Python framework that automates a multitude of tasks through mainframe integration with various APIs",
-            "Development of Python framework that automates end‑to‑end testing through a mainframe",
+            "Development of Python framework that automates end-to-end testing through a mainframe",
             "Continuous GitHub PR creation and reviews",
             "Creation and editing of technical documents including Software Architecture Diagrams, Unit Test Coverage reports, Feature Matrices, User Guides, Test Results Reports, and System Design Documents",
             "Demos to CMS stakeholders on products developed",
             "Utilization of Teams, Slack, Zoom, Jira, and Confluence for team collaboration",
-            "Frequent participation in sprint‑ending demos showcasing newly built features, process improvements, and new skills learned",
-            "Architecting a framework that automates mainframe tasks by processing data in JSON, Excel, and CSV formats—turning days of manual labor into minutes",
+            "Frequent participation in sprint-ending demos showcasing newly built features, process improvements, and new skills learned",
+            "Architecting a framework that automates mainframe tasks by processing data in JSON, Excel, and CSV formats, turning days of manual labor into minutes",
         ],
     },
     {

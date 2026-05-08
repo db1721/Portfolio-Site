@@ -1,15 +1,12 @@
 
 import styled from 'styled-components'
-import { colors } from '../../themes/default'
 
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
-  background: colors;
-  padding: 0rem;
-  list-style:none;
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between; 
-  /* overflow-x: hidden; */
 
   margin-left: 32px;
   &:first-of-type{
@@ -18,7 +15,6 @@ export const CarouselContainer = styled.ul`
 
   margin-bottom: 80px;
 
-  //remove scrollbar
   scrollbar-width: none;  
   &::-webkit-scrollbar {
     display: none;
@@ -36,12 +32,11 @@ export const CarouselContainer = styled.ul`
 export const CarouselMobileScrollNode = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;
-    min-width: ${({ final }) => final ? `120%;` : `min-content`}
+    min-width: ${({ final }) => final ? '120%' : 'min-content'};
   }
 `
 
 export const CarouselItem = styled.div`
-  background: color;
   border-radius: 3px;
   max-width: 196px;
 
@@ -52,7 +47,6 @@ export const CarouselItem = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     margin-left: 32px;
     min-width: 120px;
-    background: color;
     padding: 4px;
     align-content: start;
     scroll-snap-align: start;
