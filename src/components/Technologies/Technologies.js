@@ -45,12 +45,13 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Cloud & DevOps</ListTitle>
           <ListParagraph>
-            - AWS (EC2, S3, Lambda, CloudFormation, RDS)<br/>
+            - AWS (EC2, S3, Lambda, CloudFormation, RDS, Step Functions)<br/>
             - Docker<br/>
             - CI/CD: GitHub Actions, Jenkins<br/>
-            - Cloud9 IDE<br/>
+            - Splunk<br/>
             - Snyk<br/>
             - SonarQube<br/>
+            - Wiz<br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
