@@ -1,19 +1,31 @@
-const getYearCount = (date) => {
-    const from = new Date(date);
-    const now = new Date();
-
-    let years = now.getFullYear() - from.getFullYear();
-    const monthDiff = now.getMonth() - from.getMonth();
-
-    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < from.getDate())) {
-        years -= 1;
-    }
-
-    return years;
-};
+import { useEffect, useState } from 'react';
+import { getYearCount } from './getYearCount.mjs';
 
 function YearsSince({ date }) {
-    return <span suppressHydrationWarning>{getYearCount(date)}</span>;
+    const [today, setToday] = useState(null);
+
+    useEffect(() => {
+        let timer;
+
+        const refresh = () => {
+            const now = new Date();
+            setToday(now);
+
+            const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+            window.clearTimeout(timer);
+            timer = window.setTimeout(refresh, nextMidnight.getTime() - now.getTime());
+        };
+
+        refresh();
+        window.addEventListener('focus', refresh);
+
+        return () => {
+            window.clearTimeout(timer);
+            window.removeEventListener('focus', refresh);
+        };
+    }, []);
+
+    return <span aria-busy={today === null}>{today ? getYearCount(date, today) ?? 'N/A' : '...'}</span>;
 }
 
 export default YearsSince;

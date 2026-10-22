@@ -51,7 +51,7 @@ const Timeline = () => {
       <SectionText as="div">
         <p>
           I began my journey in tech{' '}
-          <YearsSince date="2015-01-01" />{' '}
+          <YearsSince date="2011-12-15" />{' '}
           years ago by programming Audio/Video systems, building custom GUIs with VT-Pro, writing control logic in Simpl
           Windows and Simpl+, and troubleshooting systems on-site. After years in the A/V software space, my
           curiosity for broader software development led me to complete my bachelor's degree in Software Development &
