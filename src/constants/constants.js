@@ -2,12 +2,8 @@ export const projects = [
     {
         title: 'Workout Builder',
         description: `
-        This is a dynamic, web-based fitness platform that helps you design, log and track every workout, no matter what gear you own. By pulling from your personal equipment profile, it automatically suggests exercises and builds custom routines, complete with rep, set and weight logging.
-        
-        Try it yourself:
-        Username: testuser
-        Password: TestPass123!
-            `.trim(),
+This is a dynamic, web-based fitness platform that helps you design, log and track every workout, no matter what gear you own. By pulling from your personal equipment profile, it automatically suggests exercises and builds custom routines, complete with rep, set and weight logging.
+        `.trim(),
         image: '/images/projects/default-exercise.png',
         tags: ['Django', 'Next.js', 'TypeScript', 'Redux', 'AWS'],
         source: '',
